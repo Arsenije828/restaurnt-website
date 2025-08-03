@@ -19,12 +19,14 @@ header {
     background-size: cover;
     background-position: center;
     .navigacija{
+        padding-top: 15px;
    display: flex;
     justify-content: space-between;
     text-align: center;
    
    
     nav{
+        
        
             color: white;
         
@@ -32,6 +34,8 @@ header {
         
        
         .nav-link{
+            text-transform: uppercase;
+            margin: auto 30px;
           
             color: white;
         }
@@ -46,6 +50,10 @@ header {
         margin: auto 0;
         font-size: 32px;
         margin-left: 150px;
+        p{
+            margin: auto 0;
+        }
+
         
     }
     #dvojka{
