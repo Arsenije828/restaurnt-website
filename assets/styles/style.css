@@ -5,78 +5,213 @@
 }
 
 header {
-     #paragraf{
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    #paragraf {
         display: block;
         color: #CFD2C6;
         font-size: 80px;
         font-weight: bold;
-       margin-top: 280px;
-       margin-left: 79px;
-       padding-bottom: 377px;
+        margin-top: 280px;
+        margin-left: 79px;
+        padding-bottom: 377px;
     }
-     background-image: url('../img/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    .navigacija{
+
+    .navigacija {
         padding-top: 15px;
-   display: flex;
-    justify-content: space-between;
-    text-align: center;
-   
-   
-    nav{
-        
-       
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+
+        nav {
+
+
             color: white;
-        
-        
-        
-       
-        .nav-link{
-            text-transform: uppercase;
-            margin: auto 30px;
-          
-            color: white;
-        }
-        .navbar-toggler{
-            
+
+
+
+
+            .nav-link {
+                text-transform: uppercase;
+                margin: auto 30px;
+
+                color: white;
+                 &:hover{
+                            color: orange;
+                        }
+                        &:active{
+                            color: black;
+                        }
+            }
+
+            .navbar-toggler {
+
                 background-color: white;
-           
-        }
-    }
-    .ciobo{
-        color: white;
-        margin: auto 0;
-        font-size: 32px;
-        margin-left: 150px;
-        p{
-            margin: auto 0;
+
+            }
         }
 
-        
-    }
-    #dvojka{
-        display: flex;
-        ul{
+        .ciobo {
+            color: white;
+            margin: auto 0;
+            font-size: 32px;
+            margin-left: 150px;
+
+            p {
+                margin: auto 0;
+            }
+
+
+        }
+
+        #dvojka {
             display: flex;
-            li{
-                font-size: 16px;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: white;
-                
-                margin: auto 30px;
-                list-style: none;
-                a{
+
+            ul {
+                display: flex;
+
+                li {
+                    font-size: 16px;
                     text-decoration: none;
-                    text-decoration-line: none;
+                    text-transform: uppercase;
                     color: white;
+
+                    margin: auto 30px;
+                    list-style: none;
+                   
+
+                    a {
+                        text-decoration: none;
+                        text-decoration-line: none;
+                        color: white;
+                        &:hover{
+                            color: orange;
+                        }
+                        &:active{
+                            color: black;
+                        }
+                    }
                 }
             }
         }
     }
 }
 
+#about {
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            h1 {
+                padding-top: 80px;
+                font-size: 64px;
+                font-weight: bolder;
+                padding-bottom: 184px;
+                margin-right: 100px;
+            }
 
+            p {
+                padding-top: 80px;
+                font-size: 14px;
+                padding-bottom: 140px;
+
+            }
+        }
+    }
+    #carouselExampleControls{
+      
+        .carousel-item{
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+#menu{
+    .par
+    {
+        text-align: center;
+        h1{
+            font-size: 64px;
+            font-weight: bold;
+            padding-top: 80px;
+        }
+        p{
+            font-size: 14px;
+            padding: 24px 0;
+        }
+
+    }
+    .dugmici{
+         display: flex;
+            justify-content: center;
+            align-items: center;
+        button{
+             background-color: #CFD2C6;
+              border: 1px solid gray;
+              border-radius: 10px;
+              margin-bottom: 40px;
+              &:active{
+                background-color: #333;
+                a{
+                    color: white;
+                }
+              }
+              &:hover{
+                background-color: #333;
+                a{
+                    color: white;
+                }
+                
+              }
+            a{
+                 text-decoration: none;
+                color: black;
+               
+               
+            }
+           
+               
+                
+                margin-right: 40px;
+        }
+            
+            .jedan{
+                width:158px;
+                height:48px ;
+                margin-left: 20px;
+               
+            }
+            .dva{
+                width: 121px;
+                height: 48px;
+                
+            }
+            .tri{
+                width: 120px ;
+                height: 48px;
+               
+            }
+            .cetri{
+                width: 129px ;
+                height:48px;
+            }
+            .pet{
+                width: 125px;
+                height:48px ;
+               
+            }
+            .sest{
+                margin-right: 0;
+                width: 144px ;
+                height:48px ;
+                
+            }
+        }
+    }
 }
