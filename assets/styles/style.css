@@ -40,12 +40,14 @@ header {
                 margin: auto 30px;
 
                 color: white;
-                 &:hover{
-                            color: orange;
-                        }
-                        &:active{
-                            color: black;
-                        }
+
+                &:hover {
+                    color: orange;
+                }
+
+                &:active {
+                    color: black;
+                }
             }
 
             .navbar-toggler {
@@ -82,16 +84,18 @@ header {
 
                     margin: auto 30px;
                     list-style: none;
-                   
+
 
                     a {
                         text-decoration: none;
                         text-decoration-line: none;
                         color: white;
-                        &:hover{
+
+                        &:hover {
                             color: orange;
                         }
-                        &:active{
+
+                        &:active {
                             color: black;
                         }
                     }
@@ -106,6 +110,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
         div {
             h1 {
                 padding-top: 80px;
@@ -123,95 +128,146 @@ header {
             }
         }
     }
-    #carouselExampleControls{
-      
-        .carousel-item{
-            img{
+
+    #carouselExampleControls {
+
+        .carousel-item {
+            img {
                 width: 50%;
             }
         }
     }
 }
-#menu{
-    .par
-    {
+
+#menu {
+    margin-bottom: 112px;
+    .par {
         text-align: center;
-        h1{
+
+        h1 {
             font-size: 64px;
             font-weight: bold;
             padding-top: 80px;
         }
-        p{
+
+        p {
             font-size: 14px;
             padding: 24px 0;
         }
 
     }
-    .dugmici{
-         display: flex;
-            justify-content: center;
-            align-items: center;
-        button{
-             background-color: #CFD2C6;
-              border: 1px solid gray;
-              border-radius: 10px;
-              margin-bottom: 40px;
-              &:active{
+
+    .dugmici {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            background-color: #CFD2C6;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-bottom: 40px;
+
+            &:active {
                 background-color: #333;
-                a{
+
+                a {
                     color: white;
                 }
-              }
-              &:hover{
+            }
+
+            &:hover {
                 background-color: #333;
-                a{
+
+                a {
                     color: white;
                 }
-                
-              }
-            a{
-                 text-decoration: none;
+
+            }
+
+            a {
+                text-decoration: none;
                 color: black;
-               
-               
+
+
             }
-           
-               
-                
-                margin-right: 40px;
+
+
+
+            margin-right: 40px;
         }
+
+        .jedan {
+            width: 158px;
+            height: 48px;
+            margin-left: 20px;
+
+        }
+
+        .dva {
+            width: 121px;
+            height: 48px;
+
+        }
+
+        .tri {
+            width: 120px;
+            height: 48px;
+
+        }
+
+        .cetri {
+            width: 129px;
+            height: 48px;
+        }
+
+        .pet {
+            width: 125px;
+            height: 48px;
+
+        }
+
+        .sest {
+            margin-right: 0;
+            width: 144px;
+            height: 48px;
+
+        }
+    }
+    #carouselExampleDark{
+        .carousel-item{
+            h5{
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+               
             
-            .jedan{
-                width:158px;
-                height:48px ;
-                margin-left: 20px;
-               
             }
-            .dva{
-                width: 121px;
-                height: 48px;
+            p{
+                color: white;
+                font-size: 16px;
                 
             }
-            .tri{
-                width: 120px ;
-                height: 48px;
-               
-            }
-            .cetri{
-                width: 129px ;
-                height:48px;
-            }
-            .pet{
-                width: 125px;
-                height:48px ;
-               
-            }
-            .sest{
-                margin-right: 0;
-                width: 144px ;
-                height:48px ;
-                
-            }
+        }
+        .carousel-inner{
+           margin: 0 auto;
+            
+        }
+    }
+    
+}
+#drinks{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .drink{
+            width: 570px;
+            height: 472px;
+        }
+        .photo{
+            text-align: left;
         }
     }
 }
