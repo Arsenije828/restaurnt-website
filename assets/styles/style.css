@@ -257,6 +257,7 @@ header {
     
 }
 #drinks{
+    padding-bottom: 80px;
     .container{
         display: flex;
         justify-content: space-between;
@@ -268,6 +269,44 @@ header {
         }
         .photo{
             text-align: left;
+        }
+    }
+}
+#ourteam{
+    padding-bottom: 80px;
+    background-color: #B7BCA9;
+    .paratri{
+        display: flex;
+        justify-content: space-between;
+        div{
+        h1{
+             padding-top: 80px;
+             padding-bottom: 184px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        p{
+            padding-top: 80px;
+             padding-bottom: 184px;
+            font-size: 16px;
+            color: gray;
+        }
+        }
+    }
+    .grid  {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        div{
+            padding-right: 40px;
+        }
+        .visina{
+
+            width: 300px;
+            height: auto;
+        }
+        .zadnja{
+            padding-right: 0;
         }
     }
 }
