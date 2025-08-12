@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 header {
@@ -141,6 +141,7 @@ header {
 
 #menu {
     margin-bottom: 112px;
+
     .par {
         text-align: center;
 
@@ -234,159 +235,422 @@ header {
 
         }
     }
-    #carouselExampleDark{
-        .carousel-item{
-            h5{
+
+    #carouselExampleDark {
+        .carousel-item {
+            h5 {
                 color: white;
                 font-size: 20px;
                 font-weight: bold;
-               
-            
+
+
             }
-            p{
+
+            p {
                 color: white;
                 font-size: 16px;
-                
+
             }
         }
-        .carousel-inner{
-           margin: 0 auto;
-            
+
+        .carousel-inner {
+            margin: 0 auto;
+
         }
     }
-    
+
 }
-#drinks{
+
+#drinks {
     padding-bottom: 80px;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .drink{
+        .drink {
             width: 570px;
             height: 472px;
         }
-        .photo{
+
+        .photo {
             text-align: left;
         }
     }
 }
-#ourteam{
+
+#ourteam {
     padding-bottom: 80px;
     background-color: #B7BCA9;
-    .paratri{
+
+    .paratri {
         display: flex;
         justify-content: space-between;
-        div{
-        h1{
-             padding-top: 80px;
-             padding-bottom: 184px;
-            font-size: 60px;
-            font-weight: bold;
-        }
-        p{
-            padding-top: 80px;
-             padding-bottom: 184px;
-            font-size: 16px;
-            color: gray;
-        }
+
+        div {
+            h1 {
+                padding-top: 80px;
+                padding-bottom: 184px;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            p {
+                padding-top: 80px;
+                padding-bottom: 184px;
+                font-size: 16px;
+                color: gray;
+            }
         }
     }
-    .grid  {
+
+    .grid {
         text-align: center;
         display: grid;
         grid-template-columns: auto auto auto auto;
-        div{
+
+        div {
             padding-right: 40px;
         }
-        .visina{
+
+        .visina {
 
             width: 300px;
             height: auto;
         }
-        .zadnja{
+
+        .zadnja {
             padding-right: 0;
         }
     }
 }
-#events{
+
+#events {
     padding-bottom: 80px;
     background-color: #E7E9E2;
-    .container{
-        .event{
-            h1{
-            padding-bottom: 80px;
-            padding-top: 80px;
-            font-size: 60px;
-            font-weight: bold;
+
+    .container {
+        .event {
+            h1 {
+
+                padding-bottom: 80px;
+                padding-top: 80px;
+                font-size: 60px;
+                font-weight: bold;
             }
-            
+
         }
-        .gridd{
-           
+
+        .gridd {
+
             display: grid;
-            grid-template-columns: auto auto ;
+            grid-template-columns: auto auto;
             gap: 20px;
-            img{
-                width: 630px;
+
+            div {
+                position: relative;
+
+                img {
+                    position: relative;
+                    width: 630px;
+
+                    &:hover {
+
+                        background-color: gray;
+                        opacity: 0.5;
+                    }
+
+
+
+
+                }
+
+                .hafive {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-weight: bold;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+
+                }
+
+                &:hover .hafive {
+                    opacity: 1;
+                }
             }
         }
     }
 }
-footer{
+
+footer {
     background-color: #B7BCA9;
     vertical-align: top;
     padding-top: 72px;
     padding-bottom: 72px;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-    nav{
-        ul{
-            padding-bottom: 80px;
-            display: flex;
-            li{
-                list-style: none;
-                padding-right: 20px;
-            a{
-                text-decoration: none;
-                color: black;
-                font-size: 18px;
-                text-transform: uppercase;
+        nav {
+            ul {
+                padding-bottom: 80px;
+                display: flex;
+
+                li {
+                    list-style: none;
+                    padding-right: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 18px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: orange;
+                        }
+
+                        &:active {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mreze {
+            margin-right: 90px;
+            text-align: center;
+
+            h1 {
+                padding-bottom: 72px;
+            }
+
+            img {
+                margin-right: 15px
+            }
+
+        }
+
+        .input {
+            text-align: left;
+
+            .da {
+                background-color: #B7BCA9;
+                border: none;
+                border-bottom: 1px solid black;
+
+            }
+        }
+    }
+
+}
+
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        #kec {
+            position: absolute;
+        }
+
+        .ciobo {
+
+            font-size: 25px !important;
+            margin-left: 140px !important;
+        }
+
+        #dvojka {
+
+            ul {
+                padding-left: 10px;
+                margin-top: 18px;
+
+                li {
+                    font-size: 12px !important;
+                    margin: 0 8px !important;
+                }
+            }
+        }
+
+        #paragraf {
+            margin-top: 120px;
+            margin-left: 35px;
+            padding-bottom: 200px;
+
+
+        }
+    }
+
+    #about {
+        .row {
+            .col-sm-5 {
+                h1 {
+                    font-size: 30px;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    padding-top: 20px;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+
+        #carouselExampleControls {
+           
+            & .carousel-item {
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+    #menu{
+        margin-bottom: 20px;
+        .par{
+            h1{
+                font-size: 40px;
+                scroll-padding-top: 20px;
+            }
+        }
+        .dugmici{
+           button{
+            margin-right:5px;
+           }
+        }
+    }
+    #drinks{
+        .container{
+            height: 450px;
+        }
+       padding-bottom: 0px;
+        .col-sm-4{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            .none{
+                font-size: 10px;
+            }
+           .arrows{
+            width: 0;
+           }
+        }
+        .drink{
+            
+           margin-top: 150px;
+           margin-left: 20px;
+        }
+
+    }
+    #ourteam{
+        padding-bottom: 15px;
+        .paratri{
+            .col-sm-4{
+                width: 100%;
+                
+            h1{
+                font-size: 40px!important;
+                padding-top: 15px;
+                padding-bottom: 30px;
+            
+               
+
+                
+            }
+            p{
+                padding-top: 15px;
+                padding-bottom: 30px;
+               
+
+            }
+            }
+        }
+        .grid{
+            grid-template-columns: auto;
+            div{
+               
+                p{
+                    width: 250px;
+                    margin: 0 auto;
+                }
+            }
+            .visina{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+    #events{
+        .container{
+        .event{
+            h1{
+                padding-bottom: 30px;
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+        .gridd{
+            grid-template-columns: auto auto;
+            
+            div{
+                img{
+                    width: 220px;
+                    height: auto;
+                }
             }
         }
         }
     }
-    .mreze{
-        margin-right: 90px;
-        text-align: center;
-        
-        h1{
-            padding-bottom: 72px;
-        }
-        img{
-            margin-right: 15px
-        }
-
-    }
-    .input{
-        text-align: left;
-       
-        p{
-           
-
+    footer{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto ;
             
-        }
-        input{
-            padding-bottom: 80px;
-            border: none;
-            border-bottom: 1px solid black;
-            
+            nav{
+              margin-left: 80px;
+              width: 100%;
+                ul{
+                   
+                   
+                    padding-bottom: 10px;
+                    padding-left: 0;
+                    li{
+                         padding-top: 10px;
+                    }
+                }
+            }
+            .mreze{
+                margin-left: 80px;
+                margin-right: 10px;
+                h1{
+                    padding-bottom: 20px;
+                }
+            }
+            .input{
+                margin-left: 80px;
+                p{
+                    text-align: center;
+                    width: 100%;
+                }
+                input{
+                    width: 100%;
+                }
+            }
         }
     }
-    }
-
 }
