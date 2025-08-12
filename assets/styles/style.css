@@ -452,41 +452,237 @@ footer {
 
 }
 
+@media (max-width:768px) {
+    header {
+        .navigacija {
+            #kec {
+                position: absolute;
+
+            }
+
+            .ciobo {
+                margin-left: 160px;
+            }
+
+            #dvojka {
+                ul {
+                    margin-top: 20px;
+
+                    li {
+                        margin: auto 15px !important;
+                        font-size: 13px;
+
+                    }
+                }
+            }
+        }
+
+        #paragraf {
+            margin-top: 150px;
+            margin-left: 50px;
+            padding-bottom: 200px;
+
+            h1 {}
+        }
+    }
+
+    #about {
+        .container {
+            .row {
+                .col-sm-5 {
+                    width: 100%;
+
+                    h1 {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        padding-top: 20px;
+                        padding-bottom: 20px
+                    }
+                }
+            }
+
+            #carouselExampleControls {
+                .carousel-item {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #menu {
+        margin-bottom: 50px;
+
+        .par {
+            h1 {
+                padding-top: 10px;
+                font-size: 50px;
+            }
+        }
+
+        .dugmici {
+            button {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    #drinks {
+        padding-bottom: 20px;
+
+        .container {
+            .col-sm-4 {
+                .arrows {
+                    width: 0%;
+                }
+
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .drink {
+                margin-top: 100px;
+                padding-left: 40px;
+            }
+        }
+    }
+
+    #ourteam {
+        .paratri {
+            height: 200px;
+
+            justify-content: flex-start;
+
+            .col-sm-4 {
+                width: 50%;
+
+                h1 {
+                    width: 100%;
+                    font-size: 40px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .grid {
+            grid-template-columns: auto auto;
+
+            div {
+                .visina {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+    #events {
+        .container {
+            .event {
+                h1 {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 45px;
+                }
+            }
+
+            .gridd {
+                grid-template-columns: auto auto;
+
+                div {
+                    img {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            nav {
+                ul {
+                    display: block;
+                    padding-bottom: 10px;
+                    padding-left: 0;
+
+                    li {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+
+            .mreze {
+                margin-bottom: 110px;
+                margin-right: 0;
+
+            }
+
+            .input {
+                margin-bottom: 120px;
+            }
+        }
+    }
+}
+
 @media(max-width:576px) {
     .container {
         width: 100%;
     }
 
     header {
-        #kec {
-            position: absolute;
-        }
+        .navigacija {
+            #kec {
+                position: absolute;
+            }
 
-        .ciobo {
+            .ciobo {
 
-            font-size: 25px !important;
-            margin-left: 140px !important;
-        }
+                font-size: 25px !important;
+                margin-left: 110px !important;
+            }
 
-        #dvojka {
+            #dvojka {
 
-            ul {
-                padding-left: 10px;
-                margin-top: 18px;
+                ul {
+                    padding-left: 10px;
+                    margin-top: 18px;
 
-                li {
-                    font-size: 12px !important;
-                    margin: 0 8px !important;
+                    li {
+                        font-size: 12px !important;
+                        margin: 0 8px !important;
+                    }
                 }
             }
-        }
 
-        #paragraf {
-            margin-top: 120px;
-            margin-left: 35px;
-            padding-bottom: 200px;
+            #paragraf {
+                margin-top: 120px;
+                margin-left: 35px;
+                padding-bottom: 200px;
 
 
+            }
         }
     }
 
@@ -507,7 +703,7 @@ footer {
         }
 
         #carouselExampleControls {
-           
+
             & .carousel-item {
                 img {
                     width: 100%;
@@ -516,138 +712,169 @@ footer {
             }
         }
     }
-    #menu{
+
+    #menu {
         margin-bottom: 20px;
-        .par{
-            h1{
+
+        .par {
+            h1 {
                 font-size: 40px;
                 scroll-padding-top: 20px;
             }
         }
-        .dugmici{
-           button{
-            margin-right:5px;
-           }
+
+        .dugmici {
+            button {
+                margin-right: 5px;
+            }
         }
     }
-    #drinks{
-        .container{
+
+    #drinks {
+        .container {
             height: 450px;
-        }
-       padding-bottom: 0px;
-        .col-sm-4{
-            width: 100%;
-            img{
+
+
+            padding-bottom: 0px;
+
+            .col-sm-4 {
                 width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .none {
+                    font-size: 10px;
+                }
+
+                .arrows {
+                    width: 0;
+                }
             }
-            .none{
-                font-size: 10px;
+
+            .drink {
+
+                margin-top: 150px;
+                margin-left: 20px;
             }
-           .arrows{
-            width: 0;
-           }
-        }
-        .drink{
-            
-           margin-top: 150px;
-           margin-left: 20px;
         }
 
     }
-    #ourteam{
+
+    #ourteam {
         padding-bottom: 15px;
-        .paratri{
-            .col-sm-4{
+
+        .paratri {
+            .col-sm-4 {
                 width: 100%;
-                
-            h1{
-                font-size: 40px!important;
-                padding-top: 15px;
-                padding-bottom: 30px;
-            
-               
 
-                
-            }
-            p{
-                padding-top: 15px;
-                padding-bottom: 30px;
-               
+                h1 {
+                    font-size: 40px !important;
+                    padding-top: 15px;
+                    padding-bottom: 30px;
 
-            }
+
+
+
+                }
+
+                p {
+                    padding-top: 15px;
+                    padding-bottom: 30px;
+
+
+                }
             }
         }
-        .grid{
+
+        .grid {
             grid-template-columns: auto;
-            div{
-               
-                p{
+
+            div {
+
+                p {
                     width: 250px;
                     margin: 0 auto;
                 }
             }
-            .visina{
+
+            .visina {
                 width: 200px;
                 height: auto;
             }
         }
     }
-    #events{
-        .container{
-        .event{
-            h1{
-                padding-bottom: 30px;
-                padding-top: 30px;
-                font-size: 40px;
-            }
-        }
-        .gridd{
-            grid-template-columns: auto auto;
-            
-            div{
-                img{
-                    width: 220px;
-                    height: auto;
+
+    #events {
+        .container {
+            .event {
+                h1 {
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                    font-size: 40px;
                 }
             }
-        }
-        }
-    }
-    footer{
-        padding-bottom: 10px;
-        padding-top: 10px;
-        .container{
-            width: 100%;
-            display: grid;
-            grid-template-columns: auto ;
-            
-            nav{
-              margin-left: 80px;
-              width: 100%;
-                ul{
-                   
-                   
-                    padding-bottom: 10px;
-                    padding-left: 0;
-                    li{
-                         padding-top: 10px;
+
+            .gridd {
+                grid-template-columns: auto auto;
+
+                div {
+                    img {
+                        width: 220px;
+                        height: auto;
                     }
                 }
             }
-            .mreze{
+        }
+    }
+
+    footer {
+
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            nav {
                 margin-left: 80px;
-                margin-right: 10px;
-                h1{
+
+
+                ul {
+
+                    display: block;
+
+                    padding-bottom: 10px;
+                    padding-left: 0;
+
+                    li {
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            .mreze {
+
+
+
+                h1 {
                     padding-bottom: 20px;
                 }
             }
-            .input{
-                margin-left: 80px;
-                p{
+
+            .input {
+                display: block;
+                margin-left: 100px;
+
+                p {
                     text-align: center;
-                    width: 100%;
+                    width: 300px;
                 }
-                input{
+
+                input {
                     width: 100%;
                 }
             }
