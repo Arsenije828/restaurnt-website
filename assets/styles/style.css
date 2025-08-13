@@ -452,6 +452,156 @@ footer {
 
 }
 
+@media(max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        #kec {
+            position: absolute;
+        }
+
+        #dvojka {
+            margin-top: 25px;
+        }
+
+        #paragraf {
+            margin: 170px auto 0px 56px;
+
+        }
+    }
+
+    #about {
+        .row {
+            div {
+                h1 {
+                    padding-top: 15px;
+                    font-size: 45px;
+                    padding-bottom: 50px;
+                    margin-right: 0;
+                }
+
+                p {
+                    padding-top: 15px;
+                    padding-bottom: 30px;
+                }
+
+            }
+        }
+
+        #carouselExampleControls {
+            .carousel-item {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #menu {
+        .par {
+            h1 {
+                font-size: 45px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    #drinks {
+        padding-bottom: 0;
+
+        .container {
+            .col-sm-4 {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+
+                .arrows {
+                    width: 0;
+                }
+
+            }
+
+            .drink {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    #ourteam {
+        padding-bottom: 0;
+
+        .paratri {
+            justify-content: center;
+
+            .col-sm-4 {
+                width: 50%;
+
+                h1 {
+                    font-size: 45px;
+                    padding-bottom: 30px;
+                }
+
+                p {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .grid {
+            grid-template-columns: auto auto;
+        }
+
+    }
+
+    #events {
+        .container {
+            .event {
+                h1 {
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    font-size: 45px;
+                }
+            }
+        
+
+        .gridd {
+            div {
+                img {
+                    width: 330px;
+                    height: auto;
+                }
+            }
+        }
+        }
+    }
+    footer{
+        padding-bottom: 40px;
+        padding-top: 0px;
+        .container{
+            nav{
+                ul{
+                    padding-bottom: 0;
+                    display: block;
+                    li{
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .mreze{
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            .input{
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
 @media (max-width:768px) {
     header {
         .navigacija {
